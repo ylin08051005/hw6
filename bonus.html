@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    #myForm {
+      background-color: #fff;
+      padding: 2%;
+      border-radius: 2%;
+      width: 70%;
+      margin-left: 15%; /* 15% of the viewport width */
+      margin-right: 15%; /* 15% of the viewport width */
+      align-items: center;
+    }
+
+    #myForm label {
+      display: block;
+      margin-bottom: 2%; /* Reduced margin */
+      font-weight:  ridge;
+      align-items: center;
+    }
+
+    #myForm input, #myForm textarea {
+      width: 90%;
+      padding: 2%;
+      margin-bottom: 2%; /* Reduced margin */
+      box-sizing: border-box;
+      border: 1px ridge #ccc; /* Thin border */
+      border-radius: 2%;
+      align-items: center;
+    }
+
+    #myForm textarea {
+      resize: none; /* Make textarea not resizable */
+      align-items: center; 
+      margin-bottom: 2%; 
+    }
+
+    #myForm .two-in-one {
+      display: flex;
+      border-radius: 2%;
+      gap: 2%;
+      margin-bottom: 2%; 
+      align-items: center;
+    }
+
+    #myForm .two-in-one input {
+      flex: 8;
+      align-items: center;
+      margin-bottom: 2%; 
+    }
+
+    #myForm img {
+      width: 60%;
+      margin-top: 1%; /* Adjust margin as needed */
+      float: left; /* Float the image to the left */
+      margin-right: 2%; /* Add a small margin to separate the image and label */
+    }
+
+    #myForm label[for="picture1"] {
+      float: left; /* Float the label to the left */
+      clear: left; /* Clear the float to ensure proper alignment */
+    }
+
+    #myForm label[for="input5"] {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 2%; 
+    }
+  </style>
+</head>
+<body>
+
+  <div id="myForm">
+  
+    <label for="input1">Input1
+    <input type="text" id="input1" name="input1" placeholder="input1"></label>
+    
+
+    <div class="two-in-one">
+      <label for="input2">Input2</label>
+      <input type="text" id="input2" name="input2" placeholder="input2">
+      
+      <label for="input3">Input3</label>
+      <input type="text" id="input3" name="input3" placeholder="input3">
+    </div>
+
+
+    <label for="input4">Input4
+    <input type="text" id="input4" name="input4" placeholder="input4"></label>
+
+  
+    <label for="input5">Textarea  
+    <textarea id="input5" name="input5" placeholder="make it not resizable"></textarea> </label>
+
+    <!-- Insert label for Picture1 and an image -->
+    <label for="picture1">Picture1</label>
+    <img src="https://media.istockphoto.com/id/533292615/zh/%E7%85%A7%E7%89%87/alley-in-snowy-morning.jpg?s=170667a&w=0&k=20&c=cpOm0hofnt2g3rtyThrxsgj-dvO7RFkc8pVM2k0E77U=",alt="Picture1">
+
+  </div>
+
+</body>
+</html>
